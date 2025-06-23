@@ -1,0 +1,25 @@
+[package]
+name = "math_stack"
+version = "0.0.0"
+description = "A Tauri App"
+authors = ["you"]
+edition = "2021"
+
+[lib]
+name = "math_stack_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0-beta", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0-beta", features = [] }
+tauri-plugin-shell = "2.0.0-beta"
+serde = { version = "1", features = ["derive"] }
+tokio = "1.37.0"
+tokio-stream = { version = "0.1.15", features = ["net"] }
+maud = { version = "0.26.0", features = ["warp"] }
+serde_urlencoded = "0.7.1"
+serde_json = "1.0.117"
+axum = "0.8.4"
+tower-http = { version = "0.5", features = ["fs"] }
