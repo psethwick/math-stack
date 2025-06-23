@@ -1,0 +1,3 @@
+- update to the non beta tauri 2.0
+- get everything to work
+- make the example more fun
